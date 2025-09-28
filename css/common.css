@@ -1,0 +1,409 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gayathri";
+  font-weight: 400;
+  src: url("../font/Gayathri/Gayathri-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gayathri";
+  font-weight: 700;
+  src: url("../font/Gayathri/Gayathri-Bold.ttf");
+}
+
+.cmn_ttl {
+  font-size: 20px;
+}
+
+.cmn_txt {
+  font-size: 16px;
+}
+
+.pc {
+  display: block;
+}
+
+.sp,
+.ipad {
+  display: none;
+}
+
+.d_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.l_inner {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1192px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0.7;
+}
+
+body {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-family: "Gayathri", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #fff;
+}
+
+.header.h_active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+.header .l_inner {
+  padding: 45px 0;
+}
+
+.header .gnav ul {
+  padding-top: 15px;
+}
+
+.header .gnav li {
+  width: 90px;
+  margin-right: 35px;
+  text-align: center;
+}
+
+.header .gnav li:last-child {
+  width: 120px;
+  margin-right: 8px;
+}
+
+.header .gnav li a {
+  line-height: 1.5;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header .logo_active {
+  filter: invert(0%) brightness(0%) contrast(97%);
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+footer .d_flex {
+  justify-content: flex-start;
+  padding: 42px 0;
+}
+
+footer .list_container {
+  justify-content: space-between;
+  width: 30%;
+  margin-left: 44px;
+  padding: 13px 10px;
+}
+
+footer .list_container ul li {
+  line-height: 1.8;
+}
+
+footer form {
+  width: 30%;
+  margin-left: 25px;
+  padding: 10px 15px;
+}
+
+footer form input {
+  display: block;
+  width: 283px;
+  margin: auto;
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+footer form .input_container {
+  position: relative;
+}
+
+footer form .input_container::after {
+  position: absolute;
+  top: 25%;
+  right: 40px;
+  width: 20px;
+  height: 19px;
+  background: url("../img/img_plane.png")no-repeat center/cover;
+  content: "";
+}
+
+footer form p {
+  margin-top: 20px;
+  padding-left: 22px;
+  font-size: 13px;
+}
+
+footer .icon_container {
+  width: 15%;
+}
+
+footer .icon_container ul {
+  justify-content: space-between;
+  padding: 10px 0 0 15px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+
+  .ipad {
+    display: block;
+  }
+
+  .sp,
+  .pc {
+    display: none;
+  }
+
+  .header .l_inner {
+    padding: 5.859vw 0.651vw;
+  }
+
+  .header .gnav .d_flex {
+    width: 100%;
+  }
+
+  .header .gnav li {
+    width: 10.417vw;
+  }
+
+  .header .gnav li:first-child {
+    width: 5.208vw;
+  }
+
+  footer .d_flex {
+    justify-content: space-between;
+    padding: 5.469vw 0.651vw;
+  }
+
+  footer .list_container {
+    width: 50%;
+    padding: 1.693vw 1.302vw;
+  }
+
+  footer form {
+    width: 39%;
+    margin-left: 0;
+    padding: 3.906vw 0 0 0;
+  }
+
+  footer form input {
+    width: 98%;
+    margin: 0 auto;
+    padding: 1.042vw 1.953vw;
+  }
+
+  footer form .input_container::after {
+    right: 2.865vw;
+  }
+
+  footer form p {
+    width: 100%;
+    padding: 0;
+  }
+
+  footer .icon_container {
+    width: 26%;
+    padding-top: 3.255vw;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .l_inner {
+    max-width: 92.188vw;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .ipad,
+  .pc {
+    display: none;
+  }
+
+  .header .l_inner .logo_container img {
+    padding-left: 3.125vw;
+  }
+
+  .header .menu {
+    display: block;
+    z-index: 6000;
+    width: 3.906vw;
+    height: 3.906vw;
+    margin-top: 1.094vw;
+    margin-right: 3.125vw;
+    cursor: pointer;
+  }
+
+  .header .menu span {
+    display: block;
+    width: 100%;
+    height: 0.313vw;
+    margin: 1.094vw auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.313vw;
+  }
+
+  .header .close-btn .bar1 {
+    z-index: 6000;
+    background-color: #1e1e1e;
+    transform: rotate(-45deg) translate(-0.938vw, 0.938vw);
+  }
+
+  .header .close-btn .bar2 {
+    opacity: 0;
+  }
+
+  .header .close-btn .bar3 {
+    z-index: 6000;
+    background-color: #1e1e1e;
+    transform: rotate(45deg) translate(-0.938vw, -0.938vw);
+
+  }
+
+  .header .gnav {
+    display: none;
+  }
+
+  .header .gnav .d_flex {
+    width: 100%;
+  }
+
+  .header .gnav li {
+    width: 12.5vw;
+  }
+
+  .header .gnav li:first-child {
+    width: 6.25vw;
+  }
+
+  .header .open-menu {
+    display: block;
+    position: fixed;
+    top: 0vw;
+    left: 0;
+    z-index: 5000;
+    width: 100%;
+    height: auto;
+    padding: 3.125vw 0;
+    background-color: #fff;
+  }
+
+  .header .open-menu ul {
+    display: block;
+    width: 100%;
+    padding-top: 9.375vw;
+  }
+
+  .header .open-menu ul li {
+    width: 80%;
+    margin: auto;
+    padding: 2.344vw 0;
+    text-align: center;
+    border-bottom: 0.156vw solid #d7d7d7;
+  }
+
+  .header .open-menu ul li:first-child,
+  .header .open-menu ul li:last-child {
+    width: 80%;
+  }
+
+  .header .open-menu li:last-child {
+    margin: auto;
+    margin-bottom: 0;
+    padding: 2.344vw auto 0.781vw;
+    border-bottom: none;
+  }
+
+  .header .open-menu li a {
+    color: #1e1e1e;
+  }
+
+  footer .d_flex {
+    justify-content: space-between;
+    padding: 4.688vw 3.125vw;
+  }
+
+  footer .footer_logo img {
+    width: 23.438vw;
+    height: 8.594vw;
+  }
+
+  footer .list_container {
+    width: 60%;
+    padding: 3.438vw 1.563vw;
+  }
+
+  footer form {
+    width: 48%;
+    margin-left: 0;
+    padding: 4.375vw 0 0 0;
+  }
+
+  footer form input {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0.781vw 2.344vw;
+  }
+
+  footer form .input_container::after {
+    right: 3.438vw;
+  }
+
+  footer form p {
+    width: 100%;
+    padding: 0;
+  }
+
+  footer .icon_container {
+    width: 32%;
+    padding-top: 2.813vw;
+  }
+}
